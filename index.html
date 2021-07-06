@@ -12,8 +12,8 @@
     <header class="flex">
         <div id="reservia"></div>
         <div>
-            <div id="accommodations">Hébergements</div>
-            <div id="activities">Activités</div>
+            <div id="accommodations"><a href="#accommodationsResults">Hébergements</a></div>
+            <div id="activities"><a href="#activitiesResults">Activités</a></div>
             <div id="login" class="bold">S'inscrire</div>
         </div>
     </header>
@@ -22,8 +22,8 @@
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
         <div id="search">
-            <div id="assetSearch"></div>
-            <form></form>
+            <div id="assetSearch"><img src="logo/map_marker.svg" alt="map"/></div>
+            <form type="text" name="locationSearch"></form>
             <button>Rechercher</button>
         </div>
     </div>
@@ -31,39 +31,65 @@
     <div id="filters">
         <p class="bold">Filtres</p>
         <div id="eco">
-            <div class="assetFilters"></div>
+            <div class="assetFilters"><img src="logo/bill_wave.svg" alt="bill"/></div>
             <p class="bold">Économique</p>
         </div>
         <div id="family">
-            <div class="assetFilters"></div>
+            <div class="assetFilters"><img src="logo/child.svg" alt="child"/></div>
             <p class="bold">Familial</p>
         </div>
         <div id="romantic">
-            <div class="assetFilters"></div>
+            <div class="assetFilters"><img src="logo/heart.svg" alt="heart"/></div>
             <p class="bold">Romantique</p>
         </div>
         <div id="pets">
-            <div class="assetFilters"></div>
+            <div class="assetFilters"><img src="logo/dog.svg" alt="dog"/></div>
             <p class="bold">Animaux autorisés</p>
         </div>
-        <p><img />Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
+
+    <p><img src="logo/info.svg" alt="information" class="informationLogo"/>Plus de 500 logements sont disponibles dans cette ville</p>
 
     <div id="results">
         <div id="accommodationsResults">
             <h2>Hébergements à Marseille</h2>
             <div class="accommodationsLinks">
-                <img />
+                <img src="hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergeLaCannebière" class="aLinks"/>
                 <p class="bold">Auberge La Cannebière</p>
-                <p>Nuit à partir de <strong>25 €</strong></p>
+                <p>Nuit à partir de <strong>25€</strong></p>
+
+            </div>
+            <div class="accommodationsLinks">
+                <img src="hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotelDuPort" class="aLinks"/>
+                <p class="bold">Hôtel du port</p>
+                <p>Nuit à partir de <strong>52€</strong></p>
+
+            </div>
+            <div class="accommodationsLinks">
+                <img src="hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotelLesMouettes" class="aLinks"/>
+                <p class="bold">Hôtel Les mouettes</p>
+                <p>Nuit à partir de <strong>76€</strong></p>
+
+            </div>
+            <div class="accommodationsLinks">
+                <img src="hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotelDeLaMer" class="aLinks"/>
+                <p class="bold">Hôtel de la mer</p>
+                <p>Nuit à partir de <strong>46€</strong></p>
                 
             </div>
-            <div class="accommodationsLinks"></div>
-            <div class="accommodationsLinks"></div>
-            <div class="accommodationsLinks"></div>
-            <div class="accommodationsLinks"></div>
-            <div class="accommodationsLinks"></div>
-            <p class="bold">Afficher plus</p>
+            <div class="accommodationsLinks">
+                <img src="hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="aubergeLePanier" class="aLinks"/>
+                <p class="bold">Auberge Le Panier</p>
+                <p>Nuit à partir de <strong>23€</strong></p>
+                
+            </div>
+            <div class="accommodationsLinks">
+                <img src="hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotelChezAmina" class="aLinks"/>
+                <p class="bold">Hôtel chez Amina</p>
+                <p>Nuit à partir de <strong>96€</strong></p>
+                
+            </div>
+            <a href="#" class="bold">Afficher plus</a>
         </div>
 
         <div id="popular">
@@ -89,9 +115,22 @@
     </div>
 
     <footer class="flex">
-        <div id="about"></div>
-        <div id="ourAccommodation"></div>
-        <div id="assist"></div>
+        <div id="about">
+            <p class="bold">A propos</p>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
+        </div>
+        <div id="ourAccommodation">
+            <p class="bold">Nos hébergements</p>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        </div>
+        <div id="assist">
+            <p class="bold">Assistance</p>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
     </footer>
 </body>
 </html>

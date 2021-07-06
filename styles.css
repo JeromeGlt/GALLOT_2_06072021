@@ -1,0 +1,23 @@
+.informationLogo
+{
+    max-width: 10px;
+    max-height: 15px;
+    border: solid grey 1px;
+    border-radius: 50%;
+    fill: red;
+}
+.assetFilters
+{
+    max-width: 15px;
+    max-height: 20px;
+}
+#assetSearch
+{
+    max-width: 15px;
+    max-height: 20px;
+}
+.aLinks
+{
+    max-width: 230px;
+    max-height: 150px;
+}
