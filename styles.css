@@ -1,3 +1,9 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .informationLogo
 {
     max-width: 10px;
@@ -20,4 +26,18 @@
 {
     max-width: 230px;
     max-height: 150px;
+}
+#chartLine
+{
+    max-width: 15px;
+    max-height: 20px;
+}
+input
+{
+    font-weight: bold;
+}
+.starLogo
+{
+    max-width: 15px;
+    max-height: 20px;
 }
