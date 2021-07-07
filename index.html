@@ -10,21 +10,22 @@
 
 <body>
     <header class="flex">
-        <div id="reservia"><img src="logo/Reservia.svg" alt="reservia"/></div>
-        <div>
-            <div class="borderTop"><a href="#accommodationsResults">Hébergements</a></div>
-            <div class="borderTop"><a href="#activitiesResults">Activités</a></div>
-            <div id="login" class="borderTop"><a class="bold" href="#">S'inscrire</a></div>
+        <img id="reservia" src="logo/Reservia.svg" alt="reservia"/>
+        <div id="empty"></div>
+        <div id="navigation">
+            <a href="#accommodationsResults" class="borderTop">Hébergements</a>
+            <a href="#activitiesResults" class="borderTop">Activités</a>
+            <a class="bold" href="#" id="login">S'inscrire</a>
         </div>
     </header>
 
     <div id="top">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre ville ou en pleine nature</p>
+        <h3 class="bold">Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p id="nature">En plein centre ville ou en pleine nature</p>
         <div id="search">
-            <div id="assetSearch"><img src="logo/map_marker.svg" alt="map"/></div>
-            <input type="text" name="locationSearch" value="Marseille, France"/>
-            <button>Rechercher</button>
+            <div id="assetSearch"><img id="searchIcon" src="logo/map_marker.svg" alt="map"/></div>
+            <input type="text" name="locationSearch" value="Marseille, France" class="bold"/>
+            <button class="bold">Rechercher</button>
         </div>
     </div>
 
@@ -52,7 +53,7 @@
 
     <section>
         <div id="accommodationsResults">
-            <h2>Hébergements à Marseille</h2>
+            <h3 class="bold">Hébergements à Marseille</h3>
             <div class="accommodationsLinks">
                 <img src="hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergeLaCannebière" class="aLinks"/>
                 <p class="bold">Auberge La Cannebière</p>
@@ -117,7 +118,7 @@
         </div>
 
         <div id="popular">
-            <h2>Les plus populaires</h2><img id="chartLine" src="logo/chart_line.svg" alt="chartLine"/>
+            <h3 class="bold">Les plus populaires</h3><img id="chartLine" src="logo/chart_line.svg" alt="chartLine"/>
             <div class="popularAccommodations">
                 <img src="hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotelLeSoleiDuMatin" class="aLinks"/>
                 <p class="bold">Hôtel Le soleil du matin</p>
@@ -152,7 +153,7 @@
     </section>
 
     <section id="activitiesResults">
-        <h2>Activités à Marseille</h2>
+        <h2 class="bold">Activités à Marseille</h2>
         <div class="activitiesLinks">
             <img src="activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieuxPort" class="aLinks" />
             <p class="bold">Vieux Port</p>

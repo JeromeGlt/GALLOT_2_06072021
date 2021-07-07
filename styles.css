@@ -4,20 +4,126 @@
     padding: 0;
     box-sizing: border-box;
 }
-.informationLogo
+@font-face {
+    font-family: 'raleway';
+    src: url('police/static/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: 'raleway_bold';
+    src: url('police/static/Raleway-ExtraBold.ttf');
+}
+body
 {
-    max-width: 10px;
-    max-height: 15px;
-    border: solid grey 1px;
-    border-radius: 50%;
-    fill: red;
+    width: auto;
+    height: auto;
+    font-family: raleway;
+    background-color: #FFF;
+    font-size: 1.2em;
+}
+header
+{
+    display: flex;
+}
+#reservia
+{
+    width: 10%;
+    height: 3.5rem;
+    margin: 3% 0% 2% 1.8%;
+}
+#empty
+{
+    width: 55%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+#login
+{
+    color: #0065FC;
+    padding-top: 3.6rem;
+}
+#navigation
+{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+a[class = "borderTop"]
+{
+    display: block;
+    height: 100%;
+    padding-top: 3.6rem;
+}
+a[class = "borderTop"]:hover
+{
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+.bold
+{
+    font-family: raleway_bold;
+}
+h3
+{
+    font-size: 1.3em;
+}
+#nature
+{
+    margin-top: 0.2rem;
+}
+#top
+{
+    margin-left: 3%;
+}
+#search
+{
+    display: flex;
+    margin-top: 1.6rem;
+    background-color: green;
+}
+#assetSearch
+{
+    width: 4%;
+    padding: 0.9rem 1.3rem 0.5rem 1.3rem;
+    background-color: #F2F2F2;
+    border: #F2F2F2 solid;
+    border-radius: 40% 0 0 40%;
+}
+#searchIcon
+{
+    height: 80%;
+}
+input
+{
+    border: #F2F2F2 solid 1px;
+    width: 18.5%;
+    font-size: 0.9em;
+    text-indent: 15px;
+}
+button
+{
+    background-color: #0065FC;
+    color: #FFF;
+    font-size: 0.9em;
+    border-radius: 0 1rem 1rem 0;
+    border: #0065FC solid;
+    width: 8.5%;
 }
 .assetFilters
 {
     max-width: 15px;
     max-height: 20px;
 }
-#assetSearch
+.informationLogo
+{
+    max-width: 10px;
+    max-height: 15px;
+    border: solid grey 1px;
+    border-radius: 50%;
+}
+#chartLine
 {
     max-width: 15px;
     max-height: 20px;
@@ -26,15 +132,6 @@
 {
     max-width: 230px;
     max-height: 150px;
-}
-#chartLine
-{
-    max-width: 15px;
-    max-height: 20px;
-}
-input
-{
-    font-weight: bold;
 }
 .starLogo
 {
