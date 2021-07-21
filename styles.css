@@ -32,7 +32,11 @@ header
 }
 #empty
 {
-    width: 55%;
+    width: 50%;
+}
+#noneDesk
+{
+    visibility: hidden;
 }
 a
 {
@@ -106,6 +110,10 @@ button
     border: #0065FC solid;
     width: 8.5%;
 }
+#searchIcon
+{
+    visibility: hidden;
+}
 #filtersTop
 {
     display: flex;
@@ -139,13 +147,17 @@ button
     border-radius: 2rem;
     margin-left: 2.6rem;
 }
+a[class = "filters"]:hover
+{
+    background-color: aquamarine;
+}
 #info
 {
     display: flex;
     align-items: center;
     margin-left: 3%;
 }
-.informationLogo
+#informationLogo
 {
     border: solid #F2F2F2 1px;
     border-radius: 50%;
@@ -165,10 +177,8 @@ section
 #accommodationsResults
 {
     background-color: #F2F2F2;
-    display: flex;
     width: 68%;
     height: 43rem;
-    flex-wrap: wrap;
     margin: 3% 3% 0 3%;
     border-radius: 2rem;
     padding-left: 1%;
@@ -249,7 +259,7 @@ section
     object-fit: cover;
     border-radius: 1rem 0 0 1rem;
 }
-#right
+.right
 {
     line-height: 1.4em;
     margin: 0.5rem 0 0 1rem;
@@ -310,7 +320,6 @@ section
     grid-column: 4/5;
     grid-row: 2/3;
 }
-/* Les images/////////////////////////////////////////////// */
 .actLinks
 {
     width: 100%;
@@ -325,7 +334,6 @@ section
     object-fit: cover;
     border-radius: 0.8rem 0.8rem 0 0;
 }
-/* Les images/////////////////////////////////////////////// */
 .activitiesLinks
 {
     width: 1fr;
@@ -352,4 +360,334 @@ footer
 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
+}
+@media all and (max-device-width: 480px)
+{
+    #reservia
+    {
+        width: 28%;
+        height: 3.5rem;
+        margin: 3% 0% 2% 5%;
+    }
+    #noneDesk
+    {
+        visibility: visible;
+        color: #0065FC;
+        position: absolute;
+        margin: 2rem 0 0 15rem;
+        font-size: 0.9em;
+    }
+    #login, #empty
+    {
+        display: none;
+    }
+    a[class = "borderTop"]
+    {
+        border-bottom: #F2F2F2 solid 3px;
+        font-size: 0.9em;
+        margin: 2rem 1rem 1.5rem 1rem;
+        height: 6rem;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    a[class = "borderTop"]:hover
+    {
+        border-bottom: #0065FC solid 2px;
+        border-top: none;
+    }
+    #nature
+    {
+        font-size: 0.9em;
+        margin-top: 1rem;
+    }
+    #assetSearch
+    {
+        width: 15%;
+        padding: 0.7rem 1rem 0.4rem 1rem;
+    }
+    input
+    {
+        border: #F2F2F2 solid 1px;
+        width: 60%;
+        font-size: 0.9em;
+        text-indent: 1rem;
+    }
+    button
+    {
+        font-size: 0em;
+        border-radius: 1rem;
+        width: 14%;
+    }
+    #searchIcon
+    {
+        visibility: visible;
+        width: 40%;
+        height: 40%;
+        color: white;
+    }
+    #filtersTop
+    {
+        flex-direction: column;
+        height: 15rem;
+        margin: 2rem 0 1.5rem 0;
+        background-color: red;
+    }    
+    #info
+    {
+        font-size: 0.8em;
+    }
+    #informationLogo
+    {
+        margin: 0 1rem 1.5rem 0;
+        height: 1.4rem;
+        width: 1.4rem;
+        padding: 0.2rem;
+    }
+    #principal
+    {
+        flex-direction: column-reverse;
+    }
+    #popular
+    {
+        width: 100%;
+        border-radius: 0;
+        height: 30rem;
+    }
+    #popularTitle
+    {
+        font-size: 1.1em;
+        margin: 9% 0 0 4%;
+    }
+    #chartLine
+    {
+        max-width: 20px;
+        height: 20px;
+        margin: 2.1rem 0 0 4.5rem;
+    }
+    .popularLinks
+    {
+        min-width: 90%;
+        height: 25%;
+        padding: 1%;
+        margin: auto;
+    }
+    .popLinks
+    {
+        height: 110px;
+    }
+    .right
+    {
+        line-height: 1em;
+        margin: 0.5rem 0 0 1rem;
+        font-size: 0.9em;
+    }
+    .starsBottom
+    {
+        margin-bottom: 1em;
+    }
+    #accomodationsResults
+    {
+        background-color: #FFF;
+        width: 100%;
+    }
+    .resultsLines
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    /*
+    a Hébergements et Activités
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .assetFilters
+    {
+        background-color: #DEEBFF;
+        border: #DEEBFF solid 1px;
+        padding: 0.5rem;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons
+    {
+        padding: 0.75rem;
+    }
+    .filters
+    {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        border: #e9e9e9 solid 2px;
+        border-radius: 2rem;
+        margin-left: 2.6rem;
+    }
+    #info
+    {
+        display: flex;
+        align-items: center;
+        margin-left: 3%;
+    }
+    section
+    {
+        display: flex;
+    }
+    #accommodationsTitle
+    {
+        margin: 5% 0 0 4.5%;
+    }
+    #accommodationsResults
+    {
+        background-color: #F2F2F2;
+        width: 68%;
+        height: 43rem;
+        margin: 3% 3% 0 3%;
+        border-radius: 2rem;
+        padding-left: 1%;
+    }
+    .resultsLines
+    {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .accommodationsLinks
+    {
+        background-color: #FFF;
+        width: 28%;
+        height: 43%;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 12px #aaa;
+        padding: 0.5%;
+        margin-left: 3.5%;
+        line-height: 1.3em;
+    }
+    .textLinks
+    {
+        margin-left: 0.8em;
+    }
+    .price
+    {
+        font-size: 0.8em;
+    }
+    .aLinks
+    {
+        width: 100%;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    #showMore
+    {
+        margin: 0 0 2% 3%;
+    }
+    .starLogo
+    {
+        max-width: 15px;
+        max-height: 20px;
+        fill: #0065FC;
+    }
+    #activitiesTitle
+    {
+        margin: 4% 0 1.5% 3%;
+    }
+    #activitiesResults
+    {
+        width: auto;
+        height: 29rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'port fort parc dame'
+                             'port iles parc long';
+        gap: 40px;
+        margin: 0 3% 4% 3%;
+    }
+    #port
+    {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #fort
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #iles
+    {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #parc
+    {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    #dame
+    {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    #long
+    {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .actLinks
+    {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    .imgInside
+    {
+        width: 100%;
+        height: 149px;
+        object-fit: cover;
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    .activitiesLinks
+    {
+        width: 1fr;
+        max-height: 29rem;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 12px rgb(221, 221, 221);
+    }
+    #activitiesName
+    {
+        margin: 1rem 0 0 1rem;
+    }
+    footer
+    {
+        background-color: #F2F2F2;
+        display: flex;
+        line-height: 2em;
+    }
+    .footerElements
+    {
+        width: 25%;
+        margin: 3% 5% 3% 3%;
+    }
+    .footerTitle
+    {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    } */
+    #activitiesResults
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activitiesLinks
+    {
+        width: 100%;
+    }
+    footer
+    {
+        flex-direction: column;
+    }
 }
