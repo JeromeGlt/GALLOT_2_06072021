@@ -100,6 +100,7 @@ input
     width: 18.5%;
     font-size: 0.9em;
     text-indent: 1rem;
+    max-height: 3rem;
 }
 button
 {
@@ -109,6 +110,8 @@ button
     border-radius: 0 1rem 1rem 0;
     border: #0065FC solid;
     width: 8.5%;
+    max-height: 3rem;
+    padding-top: 0.6rem;
 }
 #searchIcon
 {
@@ -125,13 +128,9 @@ button
 {
     background-color: #DEEBFF;
     border: #DEEBFF solid 1px;
-    padding: 0.5rem;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
-}
-.icons
-{
     padding: 0.75rem;
 }
 .center
@@ -172,7 +171,7 @@ section
 }
 #accommodationsTitle
 {
-    margin: 5% 0 0 4.5%;
+    margin: 5% 0 5% 4.5%;
 }
 #accommodationsResults
 {
@@ -196,7 +195,7 @@ section
     width: 28%;
     height: 43%;
     border-radius: 1rem;
-    box-shadow: 1px 1px 12px #aaa;
+    box-shadow: 1px 1px 12px rgb(221, 221, 221);
     padding: 0.5%;
     margin-left: 3.5%;
     line-height: 1.3em;
@@ -240,6 +239,11 @@ section
     height: 30px;
     margin: 3rem 0 0 5rem;
 }
+#popularTop
+{
+    display: flex;
+    width: 100%;
+}
 .popularLinks
 {
     background-color: #FFF;
@@ -247,7 +251,7 @@ section
     display: flex;
     height: 22%;
     border-radius: 1rem;
-    box-shadow: 1px 1px 12px #aaa;
+    box-shadow: 1px 1px 12px rgb(221, 221, 221);
     padding: 1%;
     margin: 0 10% 0 10%;
 }
@@ -341,7 +345,7 @@ section
     border-radius: 1rem;
     box-shadow: 1px 1px 12px rgb(221, 221, 221);
 }
-#activitiesName
+.activitiesName
 {
     margin: 1rem 0 0 1rem;
 }
@@ -361,7 +365,7 @@ footer
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 750px)
 {
     #reservia
     {
@@ -385,10 +389,11 @@ footer
     {
         border-bottom: #F2F2F2 solid 3px;
         font-size: 0.9em;
-        margin: 2rem 1rem 1.5rem 1rem;
+        margin: 2rem 0 1.5rem 0;
         height: 6rem;
-        /* display: flex;
-        justify-content: space-between; */
+        display: block;
+        min-width: 12rem;
+        text-align: center;
     }
     a[class = "borderTop"]:hover
     {
@@ -402,13 +407,14 @@ footer
     }
     #assetSearch
     {
-        width: 15%;
+        width: 10%;
+        max-height: 3em;
         padding: 0.7rem 1rem 0.4rem 1rem;
     }
     input
     {
         border: #F2F2F2 solid 1px;
-        width: 60%;
+        width: 70%;
         font-size: 0.9em;
         text-indent: 1rem;
     }
@@ -416,25 +422,39 @@ footer
     {
         font-size: 0em;
         border-radius: 1rem;
-        width: 14%;
+        width: 13%;
     }
     #searchIcon
     {
         visibility: visible;
-        width: 40%;
-        height: 40%;
+        width: 65%;
+        height: 70%;
         color: white;
+        padding-bottom: 10%;
     }
     #filtersTop
     {
-        flex-direction: column;
+        flex-wrap: wrap;
         height: 15rem;
         margin: 2rem 0 1.5rem 0;
-        background-color: red;
-    }    
+    }
+    #filterTitle
+    {
+        margin:0 17rem 0 0.7rem;
+    }
+    .filters
+    {
+        height: 3rem;
+        margin-left: 0.7rem;
+    }
+    #child
+    {
+        margin-left: 0.4rem;
+        max-width: 10rem;
+    }
     #info
     {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     #informationLogo
     {
@@ -451,243 +471,228 @@ footer
     {
         width: 100%;
         border-radius: 0;
-        height: 30rem;
+        height: 32rem;
+        flex-direction: column;
+    }
+    #popularTop
+    {
+        display: flex;
+        width: 100%;
     }
     #popularTitle
     {
         font-size: 1.1em;
-        margin: 9% 0 0 4%;
+        margin: 3% 0 2% 4%;
     }
     #chartLine
     {
-        max-width: 20px;
-        height: 20px;
-        margin: 2.1rem 0 0 4.5rem;
+        max-width: 25px;
+        height: 25px;
+        margin: 3% 0 0 30%;
     }
     .popularLinks
     {
         min-width: 90%;
         height: 25%;
-        padding: 1%;
-        margin: auto;
+        margin: 3% 0 0 4%;
     }
     .popLinks
     {
-        height: 110px;
+        height: 113px;
     }
     .right
     {
         line-height: 1em;
-        margin: 0.5rem 0 0 1rem;
         font-size: 0.9em;
     }
     .starsBottom
     {
-        margin-bottom: 1em;
-    }
-    #accomodationsResults
-    {
-        background-color: #FFF;
-        width: 100%;
-    }
-    .resultsLines
-    {
-        flex-direction: column;
-        width: 100%;
-    }
-    /*
-    a Hébergements et Activités
-    {
-        text-decoration: none;
-        color: black;
-    }
-    .assetFilters
-    {
-        background-color: #DEEBFF;
-        border: #DEEBFF solid 1px;
-        padding: 0.5rem;
-        border-radius: 50%;
-        height: 3rem;
-        width: 3rem;
-    }
-    .icons
-    {
-        padding: 0.75rem;
-    }
-    .filters
-    {
-        display: flex;
-        align-items: center;
-        height: 3rem;
-        border: #e9e9e9 solid 2px;
-        border-radius: 2rem;
-        margin-left: 2.6rem;
-    }
-    #info
-    {
-        display: flex;
-        align-items: center;
-        margin-left: 3%;
-    }
-    section
-    {
-        display: flex;
+        margin: 1em 0 1.2em 0;
     }
     #accommodationsTitle
     {
-        margin: 5% 0 0 4.5%;
+        margin: 7% 0 7% 3%;
+        font-size: 1.1em;
     }
     #accommodationsResults
     {
-        background-color: #F2F2F2;
-        width: 68%;
-        height: 43rem;
-        margin: 3% 3% 0 3%;
-        border-radius: 2rem;
-        padding-left: 1%;
+        background-color: #FFF;
+        width: 100%;
+        height: 70rem;
     }
     .resultsLines
     {
         width: 100%;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .accommodationsLinks
-    {
-        background-color: #FFF;
-        width: 28%;
-        height: 43%;
-        border-radius: 1rem;
-        box-shadow: 1px 1px 12px #aaa;
-        padding: 0.5%;
-        margin-left: 3.5%;
-        line-height: 1.3em;
-    }
-    .textLinks
-    {
-        margin-left: 0.8em;
-    }
-    .price
-    {
-        font-size: 0.8em;
-    }
-    .aLinks
-    {
-        width: 100%;
-        height: 125px;
-        object-fit: cover;
-        border-radius: 0.8rem 0.8rem 0 0;
-    }
-    #showMore
-    {
-        margin: 0 0 2% 3%;
-    }
-    .starLogo
-    {
-        max-width: 15px;
-        max-height: 20px;
-        fill: #0065FC;
-    }
-    #activitiesTitle
-    {
-        margin: 4% 0 1.5% 3%;
-    }
-    #activitiesResults
-    {
-        width: auto;
-        height: 29rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 'port fort parc dame'
-                             'port iles parc long';
-        gap: 40px;
-        margin: 0 3% 4% 3%;
-    }
-    #port
-    {
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-    #fort
-    {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    #iles
-    {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    #parc
-    {
-        grid-column: 3/4;
-        grid-row: 1/3;
-    }
-    #dame
-    {
-        grid-column: 4/5;
-        grid-row: 1/2;
-    }
-    #long
-    {
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .actLinks
-    {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 0.8rem 0.8rem 0 0;
-    }
-    .imgInside
-    {
-        width: 100%;
-        height: 149px;
-        object-fit: cover;
-        border-radius: 0.8rem 0.8rem 0 0;
-    }
-    .activitiesLinks
-    {
-        width: 1fr;
-        max-height: 29rem;
-        border-radius: 1rem;
-        box-shadow: 1px 1px 12px rgb(221, 221, 221);
-    }
-    #activitiesName
-    {
-        margin: 1rem 0 0 1rem;
-    }
-    footer
-    {
-        background-color: #F2F2F2;
-        display: flex;
-        line-height: 2em;
-    }
-    .footerElements
-    {
-        width: 25%;
-        margin: 3% 5% 3% 3%;
-    }
-    .footerTitle
-    {
-        font-size: 1.2em;
-        margin-bottom: 0.5em;
-    } */
-    #activitiesResults
-    {
-        display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
     }
+    .accommodationsLinks
+    {
+        width: 90%;
+        min-height: 35%;
+        line-height: 1.3em;
+        margin: 0 5% 3% 0;
+        padding: 0.2em;
+    }
+    .aLinks
+    {
+        height: 95px;
+    }
+    .textLinks
+    {
+        font-size: 0.8em;
+        line-height: 1.4em;
+    }
+    .starLogo
+    {
+        max-width: 10px;
+        max-height: 15px;
+        fill: #0065FC;
+    }
+    #showMore
+    {
+        position: absolute;
+        margin-top: 38rem;
+        font-size: 0.9em;
+    }
+    #activitiesTitle
+    {
+        margin: 30% 0 8% 5%;
+        font-size: 1.1em;
+    }
+    #activitiesResults
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 90%;
+    }
     .activitiesLinks
     {
+        height: 40%;
+    }
+    .actLinks, .imgInside
+    {
         width: 100%;
+        height: 113px;
+    }
+    .activitiesName
+    {
+        font-size: 0.8em;
+        margin-bottom: 1rem;
     }
     footer
     {
         flex-direction: column;
+        margin-top: 49rem;
+        padding-bottom: 2em;
+        width: 100%;
+    }
+    .footerElements
+    {
+        width: 100%;
+        font-size: 0.8em;
+        margin: 2em 0 0 2em;
+        line-height: 2em;
+    }
+}
+@media all and (min-width: 751px) and (max-width: 1279px)
+{
+    #reservia
+    {
+        width: 15%;
+        height: 4rem;
+    }
+    #empty
+    {
+        width: 30%;
+    }
+    #navigation
+    {
+        width: 50%;
+    }
+    #filtersTop
+    {
+        flex-wrap: wrap;
+        margin: 2rem 0 1% 2rem;
+        height: 9rem;
+    }
+    #assetSearch
+    {
+    width: 5%;
+    max-height: 3rem;
+    padding: 0.5rem 0.7rem 1rem 0.7rem;
+    }
+    input
+    {
+        width: 25%;
+    }
+    button
+    {
+        font-size: 0.9em;
+        width: 15%;
+        padding-top: 0.6rem;
+    }
+    #principal
+    {
+        flex-direction: column-reverse;
+    }
+    #popular
+    {
+        width: 100%;
+        margin: 3% 3% 0 0;
+        height: 22rem;
+        flex-wrap: wrap;
+    }
+    #popularTitle
+    {
+        margin: 4% 0 0 3%;
+    }
+    #chartLine
+    {
+        margin: 2.4rem 19rem 0 5rem;
+    }
+    .popularLinks
+    {
+        width: 30%;
+        height: 50%;
+        padding: 0.5%;
+        margin: 0 1% 0 2%;
+        line-height: 1.3em;
+    }
+    .popLinks
+    {
+        height: 166px;
+    }
+    .right
+    {
+        font-size: 0.9em;
+    }
+    .starsBottom
+    {
+        margin-bottom: 4em;
+    }
+    #accommodationsTitle
+    {
+        margin: 5% 0 3% 4.5%;
+    }
+    #accommodationsResults
+    {
+        width: 100%;
+        height: 40rem;
+        margin: 3% 0 0 0;
+    }
+    .centerAct
+    {
+        margin: 0.5rem 0 0 1rem;
+    }
+    footer
+    {
+        line-height: 1.5em;
+    }
+    .footerTitle
+    {
+    font-size: 1em;
     }
 }
